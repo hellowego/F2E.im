@@ -44,3 +44,5 @@ env/
 *.swp
 *.sccsc
 *~
+.idea
+F2E.im.iml
