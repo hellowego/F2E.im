@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*鏂囧瓧鎺掔増*/
+/*文字排版*/
 .f12 {
   font-size: 12px; }
 
@@ -39,7 +39,7 @@
 .no_unl {
   text-decoration: none; }
 
-/*瀹氫綅*/
+/*定位*/
 .tl {
   text-align: left; }
 
@@ -108,7 +108,7 @@
 .none {
   display: none; }
 
-/*闀垮害楂樺害*/
+/*长度高度*/
 .w10 {
   width: 10px; }
 
@@ -181,7 +181,7 @@
 .h {
   height: 100%; }
 
-/*杈硅窛*/
+/*边距*/
 .m10 {
   margin: 10px; }
 
@@ -385,6 +385,7 @@
   src: url("/static/octicons/octicons-d3d0b82bf791ac147d72bbf0287cdde8ee5c97b8.eot#iefix") format("embedded-opentype"), url("/static/octicons/octicons-a60d585f754059c3c2ef731f853c38c157040b9c.woff") format("woff"), url("/static/octicons/octicons-8b97c2cd5068ec4620cbde3140db257b1924a192.ttf") format("truetype"), url("/static/octicons/octicons-a8248bbb3baccca60948d81d69e3406b71956a69.svg#octicons") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .octicon {
   font: normal normal 16px octicons;
   line-height: 1;
@@ -946,7 +947,7 @@ a.btn-small {
   font-size: 12px; }
 
 a.btn {
-  color: #666 !important; }
+  color: #666666 !important; }
 
 .navbar-static-top .container,
 .navbar-fixed-top .container,
@@ -1003,8 +1004,8 @@ a.btn {
           .top-navbar .navbar-inner .nav li a:hover {
             color: #db4937; }
         .top-navbar .navbar-inner .nav li .avatar img {
+          -webkit-border-radius: first-value-of(2px) first-value-of(2px);
           -moz-border-radius: 2px / 2px;
-          -webkit-border-radius: 2px 2px;
           border-radius: 2px / 2px; }
     .top-navbar .navbar-inner .divider-vertical {
       float: left;
@@ -1056,8 +1057,8 @@ a.btn {
         padding: 1px 15px 1px 15px\9; }
 
 .container-box {
+  -webkit-border-radius: first-value-of(5px) first-value-of(5px);
   -moz-border-radius: 5px / 5px;
-  -webkit-border-radius: 5px 5px;
   border-radius: 5px / 5px;
   background: #fff;
   list-style-position: inside;
@@ -1102,18 +1103,18 @@ a.btn {
     line-height: 12px;
     position: relative; }
     .topics .topic-item:first-child {
+      -webkit-border-radius: first-value-of(3px) first-value-of(3px 3px 0 0);
       -moz-border-radius: 3px / 3px 3px 0 0;
-      -webkit-border-radius: 3px 3px;
       border-radius: 3px / 3px 3px 0 0; }
     .topics .topic-item:last-child {
+      -webkit-border-radius: first-value-of(3px) first-value-of(0 0 3px 3px);
       -moz-border-radius: 3px / 0 0 3px 3px;
-      -webkit-border-radius: 3px 0;
       border-radius: 3px / 0 0 3px 3px; }
     .topics .topic-item:hover {
       background: #f5f9fc; }
     .topics .topic-item .avatar {
+      -webkit-border-radius: first-value-of(3px) first-value-of(3px);
       -moz-border-radius: 3px / 3px;
-      -webkit-border-radius: 3px 3px;
       border-radius: 3px / 3px;
       float: left;
       margin: 0 10px 0 0;
@@ -1133,8 +1134,8 @@ a.btn {
       font-size: 12px;
       color: #a5a5a5; }
       .topics .topic-item .meta .node {
+        -webkit-border-radius: first-value-of(3px) first-value-of(3px);
         -moz-border-radius: 3px / 3px;
-        -webkit-border-radius: 3px 3px;
         border-radius: 3px / 3px;
         display: inline-block;
         padding: 3px 4px;
@@ -1152,8 +1153,8 @@ a.btn {
       .topics .topic-item .meta span {
         margin: 0 5px 0 2px; }
     .topics .topic-item .count {
+      -webkit-border-radius: first-value-of(8px) first-value-of(8px);
       -moz-border-radius: 8px / 8px;
-      -webkit-border-radius: 8px 8px;
       border-radius: 8px / 8px;
       position: absolute;
       right: 10px;
@@ -1165,8 +1166,8 @@ a.btn {
         padding: 3px 8px;
         display: block;
         background: #b5bbcf;
+        -webkit-border-radius: first-value-of(8px) first-value-of(8px);
         -moz-border-radius: 8px / 8px;
-        -webkit-border-radius: 8px 8px;
         border-radius: 8px / 8px; }
         .topics .topic-item .count a:visited {
           background: #d5d5d5; }
@@ -1183,28 +1184,20 @@ a.btn {
     .topics .ui-header .bread-nav {
       font-size: 14px;
       line-height: 27px; }
-    .topics .ui-header .node-link {
-      color: #666;
-      font-size: 13px;
-      padding: 0 4px; }
-    .topics .ui-header .dropdown-menu {
-      left: auto;
-      right: 0;
-      min-width: 130px; }
 
 .usercard, .user-page .profile {
   padding: 0; }
   .usercard .ui-header, .user-page .profile .ui-header {
+    -webkit-border-radius: first-value-of(5px) first-value-of(5px 5px 0 0);
     -moz-border-radius: 5px / 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px;
     border-radius: 5px / 5px 5px 0 0;
     padding: 10px;
     background: transparent url("../images/grey_header_web.png") repeat scroll 0 0;
     color: #fff;
     line-height: 25px; }
     .usercard .ui-header .avatar, .user-page .profile .ui-header .avatar {
+      -webkit-border-radius: first-value-of(3px) first-value-of(3px);
       -moz-border-radius: 3px / 3px;
-      -webkit-border-radius: 3px 3px;
       border-radius: 3px / 3px;
       float: left;
       margin-right: 10px;
@@ -1284,8 +1277,8 @@ a.btn {
       color: #ccc; }
 
 .hot-nodes a {
+  -webkit-border-radius: first-value-of(5px) first-value-of(5px);
   -moz-border-radius: 5px / 5px;
-  -webkit-border-radius: 5px 5px;
   border-radius: 5px / 5px;
   display: inline-block;
   padding: 1px 5px;
@@ -1294,8 +1287,8 @@ a.btn {
   color: #999;
   border: 1px solid #eee;
   font-size: 12px;
-  background: -moz-linear-gradient(center top, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%) repeat scroll 0 0 transparent;
-  background: -webkit-linear-gradient(top, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(center top, white 0%, #f3f3f3 50%, #ededed 51%, white 100%) repeat scroll 0 0 transparent;
+  background: -webkit-linear-gradient(top, white 0%, #f3f3f3 50%, #ededed 51%, white 100%) repeat scroll 0 0 transparent;
   border: 1px solid #e5e5e5;
   text-shadow: 0 1px 0 #fff; }
 
@@ -1360,21 +1353,21 @@ a.btn {
 .topic-detail {
   padding: 0; }
   .topic-detail .ui-header {
+    -webkit-border-radius: first-value-of(5px) first-value-of(5px 5px 0 0);
     -moz-border-radius: 5px / 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px;
     border-radius: 5px / 5px 5px 0 0;
     border-bottom: 1px solid #eee;
     padding: 10px;
     background: #f5f5f5;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
-    background-image: -webkit-linear-gradient(top, #fff, #f5f5f5);
-    background-image: -moz-linear-gradient(top, #fff, #f5f5f5);
-    background-image: -o-linear-gradient(top, #fff, #f5f5f5);
-    background-image: linear-gradient(to bottom, #ffffff, #f5f5f5); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(whitesmoke));
+    background-image: -webkit-linear-gradient(top, white, whitesmoke);
+    background-image: -moz-linear-gradient(top, white, whitesmoke);
+    background-image: -o-linear-gradient(top, white, whitesmoke);
+    background-image: linear-gradient(to bottom, white, whitesmoke); }
     .topic-detail .ui-header .avatar {
       float: right;
+      -webkit-border-radius: first-value-of(3px) first-value-of(3px);
       -moz-border-radius: 3px / 3px;
-      -webkit-border-radius: 3px 3px;
       border-radius: 3px / 3px; }
     .topic-detail .ui-header .title {
       border: 0;
@@ -1385,8 +1378,8 @@ a.btn {
     font-size: 14px;
     line-height: 25px; }
     .topic-detail .ui-content .gist .gist-file {
+      -webkit-border-radius: first-value-of(3px) first-value-of(3px);
       -moz-border-radius: 3px / 3px;
-      -webkit-border-radius: 3px 3px;
       border-radius: 3px / 3px; }
     .topic-detail .ui-content h1, .topic-detail .ui-content h2, .topic-detail .ui-content h3, .topic-detail .ui-content h4, .topic-detail .ui-content h5,
     .topic-detail .ui-content blockquote p {
@@ -1403,8 +1396,8 @@ a.btn {
     .topic-detail .ui-content iframe {
       max-height: 195px; }
   .topic-detail .ui-footer {
+    -webkit-border-radius: first-value-of(5px) first-value-of(0 0 5px 5px);
     -moz-border-radius: 5px / 0 0 5px 5px;
-    -webkit-border-radius: 5px 0;
     border-radius: 5px / 0 0 5px 5px;
     background: #f5f5f5;
     padding: 5px 10px;
@@ -1419,7 +1412,7 @@ a.btn {
     background: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
     background: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
     background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0); }
     .topic-detail .ui-footer a {
       margin: 0 15px 0 0;
       color: #333;
@@ -1429,17 +1422,17 @@ a.btn {
 .topic-reply {
   padding: 0; }
   .topic-reply .ui-header {
+    -webkit-border-radius: first-value-of(5px) first-value-of(5px 5px 0 0);
     -moz-border-radius: 5px / 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px;
     border-radius: 5px / 5px 5px 0 0;
     padding: 5px 10px;
     background: #f5f5f5;
     border-bottom: 1px solid #eee;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
-    background-image: -webkit-linear-gradient(top, #fff, #f5f5f5);
-    background-image: -moz-linear-gradient(top, #fff, #f5f5f5);
-    background-image: -o-linear-gradient(top, #fff, #f5f5f5);
-    background-image: linear-gradient(to bottom, #ffffff, #f5f5f5); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(whitesmoke));
+    background-image: -webkit-linear-gradient(top, white, whitesmoke);
+    background-image: -moz-linear-gradient(top, white, whitesmoke);
+    background-image: -o-linear-gradient(top, white, whitesmoke);
+    background-image: linear-gradient(to bottom, white, whitesmoke); }
   .topic-reply .ui-content {
     padding: 0 10px; }
     .topic-reply .ui-content .reply-item {
@@ -1448,8 +1441,8 @@ a.btn {
       .topic-reply .ui-content .reply-item:last-child {
         border-bottom: 0; }
       .topic-reply .ui-content .reply-item .avatar {
+        -webkit-border-radius: first-value-of(3px) first-value-of(3px);
         -moz-border-radius: 3px / 3px;
-        -webkit-border-radius: 3px 3px;
         border-radius: 3px / 3px;
         float: left;
         margin-right: 10px;
@@ -1485,8 +1478,8 @@ a.btn {
           .topic-reply .ui-content .reply-item .main .content iframe {
             max-height: 135px; }
     .topic-reply .ui-content .gist .gist-file {
+      -webkit-border-radius: first-value-of(3px) first-value-of(3px);
       -moz-border-radius: 3px / 3px;
-      -webkit-border-radius: 3px 3px;
       border-radius: 3px / 3px; }
   .topic-reply .ui-footer .pagination {
     margin: 5px 15px 10px 10px;
@@ -1536,8 +1529,8 @@ form .set-avatar-btn {
 form .control-group {
   margin: 0 0 15px !important; }
 form .controls .avatar {
+  -webkit-border-radius: first-value-of(3px) first-value-of(3px);
   -moz-border-radius: 3px / 3px;
-  -webkit-border-radius: 3px 3px;
   border-radius: 3px / 3px;
   vertical-align: text-bottom; }
 form .controls p {
@@ -1560,8 +1553,8 @@ form .controls p {
   border-bottom: 1px solid #eee;
   padding: 10px 0; }
   .notification-item .avatar {
+    -webkit-border-radius: first-value-of(3px) first-value-of(3px);
     -moz-border-radius: 3px / 3px;
-    -webkit-border-radius: 3px 3px;
     border-radius: 3px / 3px;
     float: left;
     margin-right: 10px;
@@ -1637,8 +1630,8 @@ form .controls p {
       color: #666;
       font-size: 12px; }
   .member-lists .member .avatar {
+    -webkit-border-radius: first-value-of(3px) first-value-of(3px);
     -moz-border-radius: 3px / 3px;
-    -webkit-border-radius: 3px 3px;
     border-radius: 3px / 3px;
     width: 48px;
     height: 48px; }
@@ -1730,11 +1723,11 @@ input[type="color"],
   border-radius: 100px;
   background-color: #aaa;
   background-color: #cccccc;
-  background-image: -moz-linear-gradient(#aaa, #ccc);
-  background-image: -webkit-linear-gradient(#aaa, #ccc);
+  background-image: -moz-linear-gradient(#aaaaaa, #cccccc);
+  background-image: -webkit-linear-gradient(#aaaaaa, #cccccc);
   background-image: linear-gradient(#aaaaaa, #cccccc);
   background-repeat: repeat-x;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 #fff; }
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 white; }
 
 .notification-indicator .unread {
   background-color: #3269a0;
@@ -1856,6 +1849,6 @@ input[type="color"],
 .topic-create form .input-prepend input {
   width: 100%;
   box-sizing: border-box;
+  -webkit-border-radius: first-value-of(4px) first-value-of(4px);
   -moz-border-radius: 4px / 4px;
-  -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px; }
